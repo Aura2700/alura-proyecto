@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="Aura Builes">
+  <img src="./img/Logo2x.svg" alt="logoA" />
+  <link rel="stylesheet" href="./styles/page.css" />
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <main>
+    <section class="section__1">
+
+      <div class="container__letf">
+        <textarea name="containertext" id="container__text" cols="30" rows="10" placeholder="Ingrese el texto aquí 🙌"
+          onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 241)"
+          min="1 "></textarea>
+
+        <div class=" container_btn">
+          <div class="guia">
+            <img src="./img/fill1.svg" alt="icono alerta" />
+            <label for="guia">Sólo letras minúsculas y sin acento</label>
+          </div>
+
+          <div class="style__btn">
+            <button id="btn__encriptar" onclick="encriptarBtn()">Encriptar</button>
+            <button id="btn__desencriptar" onclick="desencriptarBtn()">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__2">
+      <div class="container__right">
+        <div class="img__pj">
+          <img src="./img/pj.svg" alt="Personaje" />
+        </div>
+        <p id="texto_1">Ningún mensaje fue encontrado</p>
+        <p id="texto_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        
+        <div class="ocultar">
+          <p class="text__result"></p>
+        </div>
+        <div class="ocultar">
+          <button id="btn__copy" >Copiar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./assets/script.js"></script>
+
+</html>
